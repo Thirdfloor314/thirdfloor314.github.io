@@ -158,6 +158,29 @@
 
     <div class="grid">
 
+      <article class="card card-wide">
+        <header>
+          <h3>HouseFountier <span class="badge badge-live">live</span></h3>
+          <p class="card-tag">A rental marketplace for Botswana — tenants find housing, landlords list it.</p>
+        </header>
+        <p>
+          Running at <a href="https://housefountier.site" target="_blank" rel="noopener">housefountier.site</a>.
+          React and TypeScript on Vite, Tailwind with shadcn/ui, and Supabase for Postgres, auth and
+          image storage. Browse and search listings, map them with Leaflet, create and edit your own,
+          and hand off to the landlord over WhatsApp — a <code>wa.me</code> deep link, because that is
+          how people actually make contact here.
+        </p>
+        <p class="note">
+          The part worth pointing at is the data model: 21 migrations and row-level security policies
+          written per role — what the public may read, what a landlord may touch on their own listings,
+          what an admin may moderate. Access is enforced in Postgres rather than in the UI, so a
+          forged request fails at the database. Contact inquiries and listing reports are separate
+          tables feeding an admin dashboard, which is what "verified landlords" has to mean if it is
+          going to mean anything.
+        </p>
+        <ul class="chips"><li>React</li><li>TypeScript</li><li>Supabase</li><li>PostgreSQL</li><li>Tailwind</li><li>Leaflet</li></ul>
+      </article>
+
       <article class="card">
         <header>
           <h3>automix</h3>
@@ -299,11 +322,11 @@
       </div>
       <div class="skill">
         <h3>Building things</h3>
-        <ul><li>Jetpack Compose</li><li>Electron + React</li><li>Qt6 / PyQt</li><li>Node.js</li><li>Firebase</li><li>Supabase / PostgreSQL</li><li>AI coding agents</li></ul>
+        <ul><li>React + TypeScript</li><li>Jetpack Compose</li><li>Electron</li><li>Tailwind / shadcn/ui</li><li>Qt6 / PyQt</li><li>Node.js</li><li>Firebase</li><li>Supabase / PostgreSQL</li><li>AI coding agents</li></ul>
       </div>
       <div class="skill">
         <h3>Systems &amp; media</h3>
-        <ul><li>Linux (Fedora, KDE)</li><li>PipeWire &amp; Linux audio</li><li>ffmpeg pipelines</li><li>NumPy signal processing</li><li>systemd</li><li>Git</li></ul>
+        <ul><li>Linux (Fedora, KDE)</li><li>PipeWire &amp; Linux audio</li><li>ffmpeg pipelines</li><li>NumPy signal processing</li><li>Leaflet / OpenStreetMap</li><li>systemd</li><li>Git</li></ul>
       </div>
       <div class="skill">
         <h3>Networking</h3>

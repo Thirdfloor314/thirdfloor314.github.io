@@ -229,6 +229,21 @@ h1{
   transition:transform .2s ease,border-color .2s ease;
 }
 .card:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--accent) 45%, var(--line))}
+.card-wide{grid-column:1/-1}
+@media (min-width:1000px){
+  .card-wide{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px 30px;align-items:start}
+  .card-wide header{grid-column:1/-1}
+  .card-wide .chips{grid-column:1/-1}
+}
+.badge-live{
+  color:var(--accent);border-color:color-mix(in srgb,var(--accent) 45%, transparent);
+  background:var(--accent-soft);
+}
+.badge-live::before{
+  content:"";display:inline-block;width:5px;height:5px;border-radius:50%;
+  background:var(--accent);margin-right:6px;vertical-align:1px;
+}
+.card a{color:var(--accent);text-underline-offset:2px}
 .card h3{font-family:var(--display);font-size:1.32rem;letter-spacing:-.02em;margin:0 0 7px;font-weight:600}
 .badge{
   font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;
