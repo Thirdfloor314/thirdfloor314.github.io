@@ -100,11 +100,11 @@
 
         <h4 class="mini-title">How the beat detection works</h4>
         <ol class="pipeline">
-          <li><span>01</span> Decode to 22&nbsp;kHz mono and take a 96-band mel spectrogram.</li>
-          <li><span>02</span> Build an onset envelope from half-wave-rectified spectral flux, minus a local mean, so quiet passages still peak usefully.</li>
-          <li><span>03</span> Estimate tempo by autocorrelation scored through a <strong>comb filter</strong> — each candidate lag scored by the sum of its integer multiples — with a log-normal prior at 120&nbsp;BPM, refined by parabolic interpolation.</li>
-          <li><span>04</span> Place beats with Ellis-style <strong>dynamic programming</strong>: maximise onset strength while penalising drift from the tempo period, then backtrace.</li>
-          <li><span>05</span> Shift the grid by a quarter window, because spectral flux peaks slightly <em>before</em> the true transient.</li>
+          <li><span class="n">01</span><span class="t">Decode to 22&nbsp;kHz mono and take a 96-band mel spectrogram.</span></li>
+          <li><span class="n">02</span><span class="t">Build an onset envelope from half-wave-rectified spectral flux, minus a local mean, so quiet passages still peak usefully.</span></li>
+          <li><span class="n">03</span><span class="t">Estimate tempo by autocorrelation scored through a <strong>comb filter</strong> — each candidate lag scored by the sum of its integer multiples — with a log-normal prior at 120&nbsp;BPM, refined by parabolic interpolation.</span></li>
+          <li><span class="n">04</span><span class="t">Place beats with Ellis-style <strong>dynamic programming</strong>: maximise onset strength while penalising drift from the tempo period, then backtrace.</span></li>
+          <li><span class="n">05</span><span class="t">Shift the grid by a quarter window, because spectral flux peaks slightly <em>before</em> the true transient.</span></li>
         </ol>
         <p class="measure">
           Measured against a synthetic 120&nbsp;BPM click track: <strong>120.2&nbsp;BPM detected, every beat
