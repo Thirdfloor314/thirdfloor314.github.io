@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tetfulo Nkambule — BSc IT</title>
+<meta name="description" content="Tetfulo Nkambule — BSc Information Technology student. Audio DSP tools, Android apps, Linux systems and networking.">
+<meta property="og:title" content="Tetfulo Nkambule — BSc IT">
+<meta property="og:description" content="BSc Information Technology student building audio DSP tools, Android apps and Linux systems software.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/beatslides-poster.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0d10'/%3E%3Cg fill='%23c6f24e'%3E%3Crect x='6' y='13' width='3' height='6' rx='1.5'/%3E%3Crect x='12' y='8' width='3' height='16' rx='1.5'/%3E%3Crect x='18' y='11' width='3' height='10' rx='1.5'/%3E%3Crect x='24' y='6' width='3' height='20' rx='1.5'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="mark" href="#top" aria-label="Home">
+      <span class="mark-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="mark-name">Tetfulo&nbsp;Nkambule</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme" id="theme" type="button" aria-label="Switch colour theme">
+      <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" class="ico-moon"><path fill="currentColor" d="M21 13.2A9 9 0 1 1 10.8 3a7 7 0 0 0 10.2 10.2Z"/></svg>
+      <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" class="ico-sun"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/></g></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ───────────────────────────── hero ───────────────────────────── -->
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
+    <p class="eyebrow">BSc Information Technology · Year 3</p>
+    <h1>I build the tools<br>I wanted to exist.</h1>
+    <p class="lede">
+      Most of my work starts the same way: something should be possible on my own machine,
+      and isn't yet. So I write it — beat detection from raw spectrograms, a DJ that mixes a
+      whole folder of music, an Android marketplace on live Firebase, audio that plays out of
+      three devices at once. Studying IT formally; learning most of it by shipping.
+    </p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#work">See the work</a>
+      <a class="btn" href="https://github.com/Thirdfloor314" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="mailto:tetfulonkambule@gmail.com">Email</a>
+    </div>
+    <div class="beatbar" aria-hidden="true">
+      <i style="--d:0s"></i><i style="--d:.08s"></i><i style="--d:.16s"></i><i style="--d:.24s"></i>
+      <i style="--d:.32s"></i><i style="--d:.4s"></i><i style="--d:.48s"></i><i style="--d:.56s"></i>
+      <i style="--d:.64s"></i><i style="--d:.72s"></i><i style="--d:.8s"></i><i style="--d:.88s"></i>
+      <i style="--d:.96s"></i><i style="--d:1.04s"></i><i style="--d:1.12s"></i><i style="--d:1.2s"></i>
+      <i style="--d:1.28s"></i><i style="--d:1.36s"></i><i style="--d:1.44s"></i><i style="--d:1.52s"></i>
+      <i style="--d:1.6s"></i><i style="--d:1.68s"></i><i style="--d:1.76s"></i><i style="--d:1.84s"></i>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────── featured ─────────────────────────── -->
+<section class="section" id="work">
+  <div class="wrap">
+    <h2 class="sec-title"><span class="num">01</span> Featured project</h2>
+
+    <article class="feature">
+      <div class="feature-head">
+        <div>
+          <h3 class="feature-name">beatslides</h3>
+          <p class="feature-tag">Turns a folder of pictures into a slideshow that cuts on the beat of a song.</p>
+        </div>
+        <ul class="chips">
+          <li>Python</li><li>NumPy</li><li>ffmpeg</li><li>Qt6</li><li>DSP</li>
+        </ul>
+      </div>
+
+      <figure class="demo">
+        <video poster="assets/beatslides-poster.jpg" muted loop playsinline preload="none" controls>
+          <source src="assets/beatslides-demo.webm" type="video/webm">
+          <source src="assets/beatslides-demo.mp4" type="video/mp4">
+        </video>
+        <figcaption>Real output — every cut lands on a detected beat. Audio stripped for the web; press play.</figcaption>
+      </figure>
+
+      <div class="feature-body">
+        <p>
+          The hard part isn't the video, it's knowing where the beats <em>are</em>. I wrote the
+          detection from scratch — no <code>librosa</code>, no cloud API, no model. Just a
+          spectrogram, some signal processing and a dynamic program, in about 1 200 lines of
+          Python driving <code>ffmpeg</code>.
+        </p>
+
+        <h4 class="mini-title">How the beat detection works</h4>
+        <ol class="pipeline">
+          <li><span>01</span> Decode to 22&nbsp;kHz mono and take a 96-band mel spectrogram.</li>
+          <li><span>02</span> Build an onset envelope from half-wave-rectified spectral flux, minus a local mean, so quiet passages still peak usefully.</li>
+          <li><span>03</span> Estimate tempo by autocorrelation scored through a <strong>comb filter</strong> — each candidate lag scored by the sum of its integer multiples — with a log-normal prior at 120&nbsp;BPM, refined by parabolic interpolation.</li>
+          <li><span>04</span> Place beats with Ellis-style <strong>dynamic programming</strong>: maximise onset strength while penalising drift from the tempo period, then backtrace.</li>
+          <li><span>05</span> Shift the grid by a quarter window, because spectral flux peaks slightly <em>before</em> the true transient.</li>
+        </ol>
+        <p class="measure">
+          Measured against a synthetic 120&nbsp;BPM click track: <strong>120.2&nbsp;BPM detected, every beat
+          within one 30&nbsp;fps frame</strong> of the true grid.
+        </p>
+
+        <h4 class="mini-title">It can also follow the song's structure</h4>
+        <p>
+          With <code>--adaptive</code> the pacing stops being constant and starts tracking the music:
+          a DCT of each beat's spectrum gives a timbre fingerprint, a self-similarity matrix plus a
+          sliding <strong>checkerboard novelty kernel</strong> finds the section boundaries, and sections
+          that sound alike are grouped so a chorus keeps one pace every time it comes round.
+        </p>
+        <p>Pointed at <em>Shake It Off</em>, with no hints, it recovers the real arrangement:</p>
+        <div class="table-scroll">
+          <table class="structure">
+            <caption class="sr-only">Detected sections of Shake It Off with assigned cutting pace</caption>
+            <thead><tr><th>Time</th><th>Level</th><th>Pace</th><th>What it actually is</th></tr></thead>
+            <tbody>
+              <tr><td>0:00 – 0:42</td><td>9.6 dB</td><td>every 4 beats</td><td>intro + verse 1</td></tr>
+              <tr class="hot"><td>0:42 – 1:05</td><td>12.6 dB</td><td>every 1 beat</td><td>chorus</td></tr>
+              <tr><td>1:06 – 1:11</td><td>8.1 dB</td><td>every 4 beats</td><td>breakdown</td></tr>
+              <tr><td>1:12 – 1:42</td><td>10.3 dB</td><td>every 2 beats</td><td>verse 2</td></tr>
+              <tr class="hot"><td>1:42 – 2:18</td><td>13.3 dB</td><td>every 1 beat</td><td>chorus</td></tr>
+              <tr><td>2:18 – 2:44</td><td>8.8 dB</td><td>every 4 beats</td><td>the spoken bridge</td></tr>
+              <tr class="hot"><td>2:45 – 3:05</td><td>13.8 dB</td><td>every 1 beat</td><td>final chorus</td></tr>
+              <tr><td>3:06 – 3:36</td><td>10.9 dB</td><td>every 2 beats</td><td>outro</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4 class="mini-title">Engineering decisions I'd defend</h4>
+        <ul class="bullets">
+          <li><strong>Verify the pixels, not the plan.</strong> Correctness checks decode the finished video and diff frames against the detected beat times. Several real bugs — a 35&nbsp;ms flash, a wrong-octave tempo — were invisible to every other check.</li>
+          <li><strong>Test across a library, not a track.</strong> Both of those bugs only appeared after sweeping a whole music folder.</li>
+          <li><strong>Whole-frame timelines.</strong> Slide lengths are laid out in integer frames so rounding can't accumulate and drift off the beat over a four-minute song.</li>
+          <li><strong>Flat memory at any length.</strong> Plain cuts go through ffmpeg's concat demuxer; mixed photo/video slides render per-segment and join without re-encoding, so a thousand slides costs the same RAM as ten.</li>
+          <li><strong>Cut what doesn't measure.</strong> Onset density looked like a good second intensity signal and inverted the pacing on songs with busy verses, so it was deleted.</li>
+        </ul>
+
+        <p class="also">Ships as a CLI and a Qt6 desktop app whose live "plan" line is computed by the real layout code — you see the exact slide count and timing before rendering anything.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ─────────────────────────── projects ─────────────────────────── -->
+<section class="section" id="projects">
+  <div class="wrap">
+    <h2 class="sec-title"><span class="num">02</span> Other things I've built</h2>
+
+    <div class="grid">
+
+      <article class="card">
+        <header>
+          <h3>automix</h3>
+          <p class="card-tag">An auto-DJ. Give it a folder, get one continuous beat-matched set.</p>
+        </header>
+        <p>
+          Analyses every track for tempo, beat grid, downbeat phase, musical key and energy shape,
+          then orders the set so keys agree (Camelot wheel), tempos are reachable and the energy
+          arcs the way a set should. Each join is drawn from ten real DJ moves, steered by what the
+          two tracks are doing — not a crossfade.
+        </p>
+        <p class="note">
+          The detail that made it work: one <em>rigid</em> constant-tempo grid fitted per track.
+          Per-beat tracking drifts and breaks beat-matching minutes later. Correctness is checked by
+          re-analysing the <em>rendered mix</em> around each join and confirming the measured BPM
+          matches the plan.
+        </p>
+        <ul class="chips"><li>Python</li><li>NumPy</li><li>Electron</li><li>React</li><li>TypeScript</li></ul>
+      </article>
+
+      <article class="card">
+        <header>
+          <h3>ErrandGo</h3>
+          <p class="card-tag">Android marketplace for errands — post one, claim one, chat, rate.</p>
+        </header>
+        <p>
+          Kotlin and Jetpack Compose on a live Firebase backend: email/password auth, Firestore in
+          the Johannesburg region, and security rules kept in the repo and deployed from the CLI
+          rather than clicked into a console.
+        </p>
+        <p class="note">
+          Full loop across ~33 Kotlin sources — posting and claiming errands, in-app chat, profiles
+          and ratings — with the data model and access rules designed together instead of after.
+        </p>
+        <ul class="chips"><li>Kotlin</li><li>Jetpack Compose</li><li>Firebase Auth</li><li>Firestore</li><li>Gradle</li></ul>
+      </article>
+
+      <article class="card">
+        <header>
+          <h3>Multi-Out</h3>
+          <p class="card-tag">Play audio on several outputs at once, and follow Bluetooth automatically.</p>
+        </header>
+        <p>
+          Built on PipeWire's <code>combine-stream</code>: tick the outputs that should play and they
+          share one virtual sink, with optional latency compensation for devices that drift.
+        </p>
+        <p class="note">
+          Switching never drops the music. The new sink is created and linked first, live streams are
+          migrated onto it, and only then is the old one torn down — so a Bluetooth headset stays
+          connected through the change. Ships with installers and a systemd unit for auto-switching.
+        </p>
+        <ul class="chips"><li>Python</li><li>PipeWire</li><li>systemd</li><li>Linux audio</li></ul>
+      </article>
+
+      <article class="card">
+        <header>
+          <h3>BLE Fuzzer</h3>
+          <p class="card-tag">Android harness for testing how Bluetooth LE peripherals handle malformed input.</p>
+        </header>
+        <p>
+          A Kotlin app that scans for BLE devices, connects, and walks a payload set across their
+          GATT characteristics while watching for disconnects, stalls and error responses — the kind
+          of robustness testing a peripheral should survive.
+        </p>
+        <p class="note">
+          Coursework-adjacent security research, run only against hardware I own. Grew out of
+          wanting to understand the BLE stack from the protocol up rather than from a slide deck.
+        </p>
+        <ul class="chips"><li>Kotlin</li><li>Android</li><li>BLE / GATT</li><li>Security testing</li></ul>
+      </article>
+
+      <article class="card">
+        <header>
+          <h3>Holo <span class="badge">port</span></h3>
+          <p class="card-tag">Acoustic tap zones — turn a plain desk into an input surface.</p>
+        </header>
+        <p>
+          A Fedora/Linux port of <a href="https://github.com/JustinGamer191/Holo" target="_blank" rel="noopener">JustinGamer191/Holo</a>:
+          it listens through the microphone and classifies where on the desk you tapped, mapping
+          zones to actions. Packaged properly as a <code>pyproject</code> install with a CLI, a
+          GTK front end and a test suite.
+        </p>
+        <ul class="chips"><li>Python</li><li>sounddevice</li><li>PyGObject</li><li>NumPy</li></ul>
+      </article>
+
+      <article class="card">
+        <header>
+          <h3>Supabase migrator</h3>
+          <p class="card-tag">Moving a live Postgres/Supabase database between projects without losing rows.</p>
+        </header>
+        <p>
+          Node scripts that introspect the source schema, generate ordered SQL that respects foreign
+          keys, restore into the destination and then verify the destination actually matches —
+          because a migration you haven't checked row-for-row isn't finished.
+        </p>
+        <ul class="chips"><li>Node.js</li><li>PostgreSQL</li><li>Supabase</li><li>SQL</li></ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────────────────── skills ──────────────────────────── -->
+<section class="section" id="skills">
+  <div class="wrap">
+    <h2 class="sec-title"><span class="num">03</span> Toolbox</h2>
+    <div class="skills">
+      <div class="skill">
+        <h3>Languages</h3>
+        <ul><li>Python</li><li>Kotlin</li><li>TypeScript / JavaScript</li><li>Java</li><li>SQL</li><li>Bash</li></ul>
+      </div>
+      <div class="skill">
+        <h3>Building things</h3>
+        <ul><li>Jetpack Compose</li><li>Electron + React</li><li>Qt6 / PyQt</li><li>Node.js</li><li>Firebase</li><li>Supabase / PostgreSQL</li></ul>
+      </div>
+      <div class="skill">
+        <h3>Systems &amp; media</h3>
+        <ul><li>Linux (Fedora, KDE)</li><li>PipeWire &amp; Linux audio</li><li>ffmpeg pipelines</li><li>NumPy signal processing</li><li>systemd</li><li>Git</li></ul>
+      </div>
+      <div class="skill">
+        <h3>Networks &amp; security</h3>
+        <ul><li>IPv4 / IPv6 addressing</li><li>Routing &amp; switching labs</li><li>Cisco Packet Tracer</li><li>Wi-Fi &amp; BLE analysis</li><li>Wireshark</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────── education ────────────────────────── -->
+<section class="section" id="education">
+  <div class="wrap">
+    <h2 class="sec-title"><span class="num">04</span> Education</h2>
+    <div class="edu">
+      <div class="edu-head">
+        <h3>BSc Information Technology</h3>
+        <!-- TODO: add your institution name and expected graduation year here -->
+        <p class="edu-meta">Currently in Year 3</p>
+      </div>
+      <div class="edu-body">
+        <p>Modules I'm taking or have taken that show up most in the work above:</p>
+        <ul class="modules">
+          <li><span class="code">CSI-354</span> Operating Systems <em>— processes, threads, CPU scheduling</em></li>
+          <li><span class="code">CSI-374</span> Networking Concepts <em>— IPv4/IPv6 addressing, routing</em></li>
+          <li><span class="code">CSI-342</span> Systems Analysis &amp; Design <em>— requirements analysis, SDLC</em></li>
+          <li><span class="code">CSI-262</span> · <span class="code">CSI-244</span> · <span class="code">CSI-223</span> · <span class="code">CSI-293</span> Core computing</li>
+          <li><span class="code">MGT-301</span> Organisational Behaviour · <span class="code">MGT-202</span> Entrepreneurship</li>
+          <li><span class="code">ECO-111</span> · <span class="code">ECO-112</span> Economics</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────────────────── contact ─────────────────────────── -->
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <h2 class="sec-title"><span class="num">05</span> Get in touch</h2>
+    <p class="contact-lede">
+      Open to internships, graduate roles and interesting problems — particularly anything
+      involving audio, Android or Linux systems.
+    </p>
+    <div class="cta">
+      <a class="btn btn-primary" href="mailto:tetfulonkambule@gmail.com">tetfulonkambule@gmail.com</a>
+      <a class="btn" href="https://github.com/Thirdfloor314" target="_blank" rel="noopener">github.com/Thirdfloor314</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <span>© <span id="yr">2026</span> Tetfulo Nkambule</span>
+    <span class="foot-note">Hand-written HTML &amp; CSS. No framework, no build step.</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
