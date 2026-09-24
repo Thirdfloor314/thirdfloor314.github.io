@@ -25,7 +25,7 @@
 // fade sections in as they arrive
 (function () {
   if (!('IntersectionObserver' in window)) return;
-  var targets = document.querySelectorAll('.feature, .card, .skill, .edu, .contact-lede');
+  var targets = document.querySelectorAll('.feature, .card, .how-points li, .skill, .edu, .contact-lede');
   targets.forEach(function (el) { el.classList.add('reveal'); });
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
